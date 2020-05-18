@@ -3,9 +3,10 @@ node_js:
   - "12"
   - "10"
   - "8"
-  - "6"
-  - "4"
-  - "0.12"
+before_script:
+  - echo $TRAVIS_COMMIT
+  - echo $TRAVIS
+  - echo $TRAVIS_JOB_ID
 script: make test-coveralls
 
 jobs:
