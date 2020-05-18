@@ -7,7 +7,7 @@ Wechat API
 - [![Build Status](https://travis-ci.com/jeff-tian/wechat-api.png?branch=master)](https://travis-ci.com/jeff-tian
 /wechat-api)
 - [![Dependencies Status](https://david-dm.org/jeff-tian/wechat-api.png)](https://david-dm.org/jeff-tian/wechat-api)
-- [![Coverage Status](https://coveralls.io/repos/jeff-tian/wechat-api/badge.png)](https://coveralls.io/r/jeff-tian/wechat-api)
+- [![Coverage Status](https://coveralls.io/repos/github/Jeff-Tian/wechat-api/badge.svg?branch=master)](https://coveralls.io/github/Jeff-Tian/wechat-api?branch=master)
 
 ## 功能列表
 - 发送客服消息（文本、图片、语音、视频、音乐、图文）
