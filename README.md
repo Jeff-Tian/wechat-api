@@ -36,7 +36,7 @@ Wechat API
 ## Installation
 
 ```sh
-$ npm install wechat-api
+npm install @jeff-tian/wechat-api
 ```
 
 ## Usage
@@ -76,7 +76,7 @@ WechatAPI.patch("uploadLogo", "https://api.weixin.qq.com/card/membercard/updateu
 ```
 执行后控制台会输出警告，并覆盖原来`uploadLogo`这个接口。
 
-> **提示** 当有新的微信接口开放或发现有用但 wechat-api 尚未加入开发的接口时，请在本库中相应的 js 文件中增加对新接口定义并提交 PullRequest 以便大家都能使用这个新接口。如果没有开发能力，请提交 issue. 
+> **提示** 当有新的微信接口开放或发现有用但 @jeff-tian/wechat-api 尚未加入开发的接口时，请在本库中相应的 js 文件中增加对新接口定义并提交 PullRequest 以便大家都能使用这个新接口。如果没有开发能力，请提交 issue. 
 
 > **警告** 这个覆盖不只会覆盖 api 中的微信接口，所有定义给 api 的方法/成员变量 等都有可能被覆盖，请谨慎请用
 
@@ -123,7 +123,7 @@ QQ群：157964097，使用疑问，开发，贡献代码请加群。
 
 ```
 
- project  : wechat-api
+ project  : @jeff-tian/wechat-api
  repo age : 1 year, 9 months
  active   : 97 days
  commits  : 211
