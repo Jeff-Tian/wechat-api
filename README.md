@@ -4,9 +4,10 @@ Wechat API
 
 ## 模块状态
 - [![NPM version](https://badge.fury.io/js/wechat-api.png)](http://badge.fury.io/js/wechat)
-- [![Build Status](https://travis-ci.org/node-webot/wechat-api.png?branch=master)](https://travis-ci.org/node-webot/wechat-api)
-- [![Dependencies Status](https://david-dm.org/node-webot/wechat-api.png)](https://david-dm.org/node-webot/wechat-api)
-- [![Coverage Status](https://coveralls.io/repos/node-webot/wechat-api/badge.png)](https://coveralls.io/r/node-webot/wechat-api)
+- [![Build Status](https://travis-ci.com/jeff-tian/wechat-api.png?branch=master)](https://travis-ci.com/jeff-tian
+/wechat-api)
+- [![Dependencies Status](https://david-dm.org/jeff-tian/wechat-api.png)](https://david-dm.org/jeff-tian/wechat-api)
+- [![Coverage Status](https://coveralls.io/repos/jeff-tian/wechat-api/badge.png)](https://coveralls.io/r/jeff-tian/wechat-api)
 
 ## 功能列表
 - 发送客服消息（文本、图片、语音、视频、音乐、图文）
@@ -28,7 +29,7 @@ Wechat API
 - 素材管理
 - 摇一摇周边
 
-详细参见[API文档](http://doxmate.cool/node-webot/wechat-api/api.html)
+详细参见[API文档](http://doxmate.cool/jeff-tian/wechat-api/api.html)
 
 企业版本请前往：<https://github.com/node-webot/wechat-enterprise>
 
@@ -41,7 +42,7 @@ $ npm install wechat-api
 ## Usage
 
 ```js
-var WechatAPI = require('wechat-api');
+var WechatAPI = require('@jeff-tian/wechat-api');
 
 var api = new WechatAPI(appid, appsecret);
 api.updateRemark('open_id', 'remarked', function (err, data, res) {
@@ -53,7 +54,7 @@ api.updateRemark('open_id', 'remarked', function (err, data, res) {
 
 当微信官方文档已更新，但本库未来得及更新，而又想用新的微信 api 时，可调用 patch 方法来扩展新功能。
 ```js
-var WechatAPI = require('wechat-api');
+var WechatAPI = require('@jeff-tian/wechat-api');
 var api = new WechatAPI(appid, appsecret);
 
 // 扩展新api : updateInfo
@@ -82,7 +83,7 @@ WechatAPI.patch("uploadLogo", "https://api.weixin.qq.com/card/membercard/updateu
 ### 多进程
 当多进程时，token需要全局维护，以下为保存token的接口。
 ```
-var WechatAPI = require('wechat-api');
+var WechatAPI = require('@jeff-tian/wechat-api');
 var api = new WechatAPI('appid', 'secret', function (callback) {
   // 传入一个获取全局token的方法
   fs.readFile('access_token.txt', 'utf8', function (err, txt) {

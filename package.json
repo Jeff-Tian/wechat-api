@@ -1,10 +1,14 @@
 {
-  "name": "wechat-api",
-  "version": "1.35.1",
+  "name": "@jeff-tian/wechat-api",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "0.0.0-development",
   "description": "微信公共平台Node库 API",
   "main": "index.js",
   "scripts": {
-    "test": "make test-all"
+    "test": "make test-all",
+    "semantic-release": "semantic-release"
   },
   "config": {
     "travis-cov": {
@@ -13,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/node-webot/wechat-api.git"
+    "url": "https://github.com/jeff-tian/wechat-api.git"
   },
   "keywords": [
     "weixin",
@@ -31,7 +35,8 @@
     "mocha-lcov-reporter": "*",
     "muk": "*",
     "rewire": "*",
-    "istanbul": "*"
+    "istanbul": "*",
+    "semantic-release": "^17.0.7"
   },
   "author": "Jackson Tian",
   "license": "MIT",
